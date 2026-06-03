@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  hello-rancher:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-06-03T13:53:08.6362578+03:00"
+    description: A simple app from Docker Hub
+    digest: 2f05c0130c641e29a106430f32a1039f39952613a7ae69a591aabb24f2b3f935
+    name: hello-rancher
+    type: application
+    urls:
+    - https://killerdeiwdhe-wq.github.io/hello-rancher/hello-rancher-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-06-03T13:53:08.6300898+03:00"
