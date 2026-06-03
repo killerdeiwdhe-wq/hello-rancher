@@ -11,8 +11,8 @@ service:
   targetPort: 8080
 
 ingress:
-  enabled: true
-  ingressClassName: traefik
+  enable: true
+  ingressClassName: nginx
   hosts:
     - host: ""
       paths:
