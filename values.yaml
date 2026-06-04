@@ -13,11 +13,13 @@ service:
 ingress:
   enabled: true
   ingressClassName: nginx
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2   # захватываем вторую группу
   hosts:
-    - host: ""
+    - host: ""                # если пусто — работает на всех хостах, лучше указать ваш домен
       paths:
-        - path: /testpatch
-          pathType: ImplementationSpecific
+        - path: /testpatch(/|$)(.*)   # регулярка: /testpatch/всё_что_далее
+          pathType: ImplementationSpecific   # обязательно
   backend:
     port: 80
   tls: []
