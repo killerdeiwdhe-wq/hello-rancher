@@ -35,7 +35,7 @@ spec:
               service:
                 name: {{ include "hello-rancher.fullname" $ }}
                 port:
-                  number: {{ $.Values.service.port | default 8080 }}
+                  number: {{ $.Values.ingress.backend.port | default 8080 }}
           {{- end }}
     {{- end }}
 {{- end }}
