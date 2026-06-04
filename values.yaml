@@ -16,7 +16,7 @@ ingress:
   hosts:
     - host: ""
       paths:
-        - path: /test
+        - path: /testpatch
           pathType: Prefix
   backend:
     port: 80
