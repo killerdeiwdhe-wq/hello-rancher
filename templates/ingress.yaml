@@ -8,7 +8,6 @@ metadata:
   {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
-    nginx.ingerss.kubernetes.io/rewrite-target: /$2
   {{- end }}
 spec:
   {{- if .Values.ingress.ingressClassName }}
