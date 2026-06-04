@@ -14,7 +14,7 @@ ingress:
   enabled: true
   ingressClassName:
   hosts:
-    - host: ""
+    - host: "dev.softrust.ru"
       paths:
         - path: /testpatch
           pathType: Prefix
