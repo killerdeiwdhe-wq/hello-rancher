@@ -12,7 +12,7 @@ service:
 
 ingress:
   enabled: true
-  ingressClassName: nginx
+  ingressClassName:
   hosts:
     - host: ""
       paths:
