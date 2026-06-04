@@ -12,12 +12,12 @@ service:
 
 ingress:
   enabled: true
-  ingressClassName:
+  ingressClassName: nginx
   hosts:
     - host: ""
       paths:
         - path: /testpatch
-          pathType: Prefix
+          pathType: ImplementationSpecific
   backend:
     port: 80
   tls: []
